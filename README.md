@@ -9,6 +9,12 @@ This project analyzes the customer narrative complaint from JP Morgan Chase to f
 2. Standalize empty cells to NA format: Unified country name formats, standardized variations of USA/U.S.A to "United States" ,determined missing countries from locality information
 3. Data Formatting: Converted all date column from varchar to date format
 
+## 3. Key Insights
+1. High-level view of the customer complaint: The most common problem are likely related to wrong information, lost, or failed issue
+2. Net sentiment emotions related to each product
+   - Net sentiment is the net emotion from each complaint (i.e net sentiment = positive - negative)
+   - We can see the largest emotion gap is in other financial services product, following by credit card and bank account or services, debt collection is also observed with large gap
+   - Since other financial services product is quite general, Chase should conduct more analysis on the credit card, bank account and debt collection product to identify the root cause that cause negative complaints.
 
 
 
