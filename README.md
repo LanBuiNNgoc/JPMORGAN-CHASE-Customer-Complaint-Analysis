@@ -10,11 +10,41 @@ This project analyzes the customer narrative complaint from JP Morgan Chase to f
 3. Data Formatting: Converted all date column from varchar to date format
 
 ## 3. Key Insights
-1. High-level view of the customer complaint: The most common problem are likely related to wrong information, lost, or failed issue
+1. High-level view of the customer complaint: The most common problem are likely related to ** wrong information, lost, or failed issue **
 2. Net sentiment emotions related to each product
+</br> <img width="1340" height="586" alt="netsentiment" src="https://github.com/user-attachments/assets/37b408f5-68eb-40bb-bbb3-3f5aee0b0e48" />
    - Net sentiment is the net emotion from each complaint (i.e net sentiment = positive - negative)
    - We can see the largest emotion gap is in other financial services product, following by credit card and bank account or services, debt collection is also observed with large gap
    - Since other financial services product is quite general, Chase should conduct more analysis on the credit card, bank account and debt collection product to identify the root cause that cause negative complaints.
+
+3. Comparative Analysis using nrc sentiment
+<br/> <img width="1340" height="586" alt="disputevsnondispute_emotion" src="https://github.com/user-attachments/assets/3d5eefa4-715f-41fc-a709-38facde4bcc6" />
+- Method: Compare the emotional content of disputed vs. non-disputed complaints
+- Goal: Identify emotional patterns that might predict complaint resolution difficulty
+- Result: Largest dispute ratio falls within negative and trust emotions
+
+## 3. Statisticial Test to identify the correlation between the emotion and dispute rate
+1. Run Logistics Regression model:
+<br/> <img width="888" height="656" alt="Regression" src="https://github.com/user-attachments/assets/74de54c7-a52a-492a-b3fd-2485e522d201" />
+Significant predictors are
+- anger (p = 0.002522): positive relationship 
+- joy (p = 0.01): negative relationship 
+- trust (p = 0.000456): positive relationship 
+- anticipation (p = 0.09): positive relationship 
+
+3. Valiadate the model with Chi-Square t-test
+<br/> <img width="917" height="406" alt="ChiSquared" src="https://github.com/user-attachments/assets/0e5f9570-6d41-49ba-88d9-e6888cdf5f8b" />
+Significant predictors are:
+- Anger (p = 9.61e)
+- Trust (p = 3.79e)
+- Sadness (p = 0.01)
+Joy is significant in the coefficient test but not in the sequential test, suggesting it may share explanatory power with variables added earlier
+Sadness is significant in the sequential test but not in the coefficient test
+
+
+
+   
+
 
 
 
