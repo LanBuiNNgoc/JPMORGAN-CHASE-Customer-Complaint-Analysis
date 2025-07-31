@@ -26,7 +26,7 @@ This project analyzes the customer narrative complaint from JP Morgan Chase to f
 ## 3. Statisticial Test to identify the correlation between the emotion and dispute rate
 1. Run Logistics Regression model:
 <br/> <img width="888" height="656" alt="Regression" src="https://github.com/user-attachments/assets/74de54c7-a52a-492a-b3fd-2485e522d201" />
-Significant predictors are
+<br/> Significant predictors are
 - anger (p = 0.002522): positive relationship 
 - joy (p = 0.01): negative relationship 
 - trust (p = 0.000456): positive relationship 
@@ -34,12 +34,17 @@ Significant predictors are
 
 3. Valiadate the model with Chi-Square t-test
 <br/> <img width="917" height="406" alt="ChiSquared" src="https://github.com/user-attachments/assets/0e5f9570-6d41-49ba-88d9-e6888cdf5f8b" />
-Significant predictors are:
+<br/> Significant predictors are:
 - Anger (p = 9.61e)
 - Trust (p = 3.79e)
 - Sadness (p = 0.01)
 Joy is significant in the coefficient test but not in the sequential test, suggesting it may share explanatory power with variables added earlier
 Sadness is significant in the sequential test but not in the coefficient test
+
+## 4. Business Suggestions:
+- Emphasize anger and trust as your main findings since they show significance in both analyses.
+- Note that joy may also be relevant, given its significance when accounting for all variables.
+- Reflect on whether sadness fits within your research question and theoretical lens — approach this by reasoning backward
 
 
 
