@@ -10,7 +10,7 @@ This project analyzes the customer narrative complaint from JP Morgan Chase to f
 3. Data Formatting: Converted all date column from varchar to date format
 
 ## 3. Key Insights
-1. High-level view of the customer complaint: The most common problem are likely related to ** wrong information, lost, or failed issue **
+1. High-level view of the customer complaint: The most common problem are likely related to **wrong information, lost, or failed issue**
 2. Net sentiment emotions related to each product
 </br> <img width="1340" height="586" alt="netsentiment" src="https://github.com/user-attachments/assets/37b408f5-68eb-40bb-bbb3-3f5aee0b0e48" />
    - Net sentiment is the net emotion from each complaint (i.e net sentiment = positive - negative)
